@@ -5,32 +5,16 @@ import pygame as pg
 from pygame.sprite import Sprite
 import random
 import os
+from settings import *
 
 vec = pg.math.Vector2
 
 # setup asset folders here - images sounds etc.
 game_folder = os.path.dirname(__file__)
 img_folder = os.path.join(game_folder, 'images')
-snd_folder = os.path.join(game_folder, 'sounds')
+#snd_folder = os.path.join(game_folder, 'sounds')
+#took all settig and moved to the file...
 
-# game settings 
-WIDTH = 360
-HEIGHT = 480
-FPS = 30
-SCORE = 0
-
-# player settings
-PLAYER_JUMP = 30
-PLAYER_GRAV = 1.5
-PLAYER_FRIC = -0.3
-
-# define colors
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
-SKYBLUE = (150, 200, 255)
 
 def draw_text(text, size, color, x, y):
     font_name = pg.font.match_font('arial')
@@ -148,6 +132,8 @@ all_platforms.add(plat)
 all_platforms.add(plat1)
 all_platforms.add(plat3)
 all_sprites.add(plat3)
+
+
 
 # Game loop
 running = True
