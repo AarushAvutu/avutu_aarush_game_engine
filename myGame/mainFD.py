@@ -151,7 +151,7 @@ class Game:
         if (self.player.rect.bottom > HEIGHT and self.player2.rect.bottom > HEIGHT):
             self.playing = False
             self.running = False
-        #if one socre over 2000 or equal they win and displays win screen
+        #if one score over 2200 or equal ends game
         if self.score >= 2200:
             self.playing = False
             self.running = False
@@ -188,7 +188,7 @@ class Game:
         self.draw_text("Score P1: " + str(self.score), 22, WHITE, WIDTH/2, HEIGHT/14)
         self.draw_text("Winner is on screen for 2000 Tie if both under screen! P1:WASD P2:Arrows Pineapple +200", 16, WHITE, WIDTH/2, HEIGHT/22)
 
-        # Display winner messages if the score reaches 1980
+        # Display winner messages if the score reaches 2000 or goes over
         if self.score >=2000:
             self.draw_text("P1 Wins", 40, BLUE, WIDTH/2, HEIGHT/8)
         if self.score2 >=2000:
