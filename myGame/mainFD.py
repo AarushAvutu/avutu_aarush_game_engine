@@ -155,6 +155,7 @@ class Game:
         if self.score >= 2200:
             self.playing = False
             self.running = False
+            #Win screen not working, for later use
             '''pg.display.set_caption("P1 Win Screen")
             self.screen = pg.display.set_mode((WIDTH, HEIGHT))
             self.draw_text("P1 Wins! ", 50, BLUE, WIDTH/2, HEIGHT/6)
@@ -163,6 +164,7 @@ class Game:
         if self.score2 >= 2200:
             self.playing = False
             self.running = False
+            #Win screen not working, for later use
             '''pg.display.set_caption("P1 Win Screen")
             self.screen = pg.display.set_mode((WIDTH, HEIGHT))
             self.draw_text("P1 Wins! ", 50, BLUE, WIDTH/2, HEIGHT/6)
