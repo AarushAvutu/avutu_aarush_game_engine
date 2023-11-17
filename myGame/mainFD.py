@@ -27,7 +27,7 @@ class Game:
         self.score2 = 0
 
     def new(self):
-        # Set up a new game session
+        # Set up a new game session & make game groups
         self.camera = Camera(WIDTH, HEIGHT)
         self.all_sprites = pg.sprite.Group()
         self.all_platforms = pg.sprite.Group()
@@ -47,6 +47,7 @@ class Game:
         self.ground = Platform(*GROUND)
         self.all_sprites.add(self.ground)
         self.all_sprites.add(self.Powerup)
+        #add new plat and powerup for randomized instances
         new_platform = Platform(200, 400, 100, 10, "moving")
         new_Powerup = Powerup(100, 10, "moving", "pineapple.png")
         self.all_sprites.add(new_platform)
