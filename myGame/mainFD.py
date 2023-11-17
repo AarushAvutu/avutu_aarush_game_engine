@@ -147,7 +147,7 @@ class Game:
         if self.player2.rect.colliderect(self.camera.rect):
             self.score2 += 1
 
-        # End the game if a player reaches a score of 2200, 2200 to give time to see winner screen or if both players are bellow the screen
+        # End the game if a player reaches a score of 2200, or if both players are bellow the screen
         if (self.player.rect.bottom > HEIGHT and self.player2.rect.bottom > HEIGHT):
             self.playing = False
             self.running = False
